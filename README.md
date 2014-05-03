@@ -1,4 +1,4 @@
-<h1><img src="https://raw.github.com/c0ding/qwak/master/doc/worldcoin.png" height=50 alt="qwak" title="qwak"> qwak</h1>
+<h1><img src="https://raw.github.com/c0ding/qwak/master/doc/qwak.png" height=50 alt="qwak" title="qwak"> qwak</h1>
 
 qwak is an APACHE licensed library written in Python designed to provide a simple to use API wrapper for [MPOS](https://github.com/MPOS/php-mpos).
 
