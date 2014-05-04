@@ -17,7 +17,7 @@ or install from PyPi
 
 ## Configuration:
 
-Create a ```~/.qwak_config.py``` and fill in your pool URL and API key like so:
+Create a ```~/.qwak_config.py``` file and fill in your pool URL and API key like so:
 
 ```
 #!/usr/bin/env python
