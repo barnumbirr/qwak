@@ -46,6 +46,24 @@ def pool_sharerate():
 	return json.loads(d)
 
 
+def current_workers():
+	"""Get amount of current active workers."""
+	d = make_request('getcurrentworkers')
+	return json.loads(d)
+
+
+def top_contributors():
+	"""Fetch top contributors data."""
+	d = make_request('gettopcontributors')
+	return json.loads(d)
+
+
+def estimated_time():
+	"""Get estimated time to next block based on pool hashrate (seconds)."""
+	d = make_request('getestimatedtime')
+	return json.loads(d)
+
+
 def block_last():
 	"""Get time since last block found (seconds)."""
 	d = make_request('gettimesincelastblock')
@@ -64,7 +82,7 @@ def blocks_found():
 	return json.loads(d)
 
 
-def blocks_stats():
+def block_stats():
 	"""Get pool block stats."""
 	d = make_request('getblockstats')
 	return json.loads(d)
@@ -73,24 +91,6 @@ def blocks_stats():
 def difficulty():
 	"""Get current difficulty in blockchain."""
 	d = make_request('getdifficulty')
-	return json.loads(d)
-
-
-def current_workers():
-	"""Get amount of current active workers."""
-	d = make_request('getcurrentworkers')
-	return json.loads(d)
-
-
-def top_contributors():
-	"""Fetch top contributors data."""
-	d = make_request('gettopcontributors')
-	return json.loads(d)
-
-
-def estimated_time():
-	"""Get estimated time to next block based on pool hashrate (seconds)."""
-	d = make_request('getestimatedtime')
 	return json.loads(d)
 
 
