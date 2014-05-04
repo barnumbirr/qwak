@@ -1,0 +1,7 @@
+STATS
+COPYING
+setup.py
+README.md
+qwak/__init__.py
+qwak/qwak_api.py
+qwak/qwak_utils.py

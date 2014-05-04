@@ -5,7 +5,7 @@ from distutils.core import setup
 
 setup(
     name = 'qwak',
-    version = '0.1',
+    version = '0.2',
     url = 'https://github.com/c0ding/qwak',
     download_url = 'https://github.com/c0dingqwak/archive/master.zip',
     author = 'c0ding',
