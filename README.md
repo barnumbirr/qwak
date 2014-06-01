@@ -1,4 +1,4 @@
-<h1><img src="https://raw.github.com/c0ding/qwak/master/doc/qwak.png" height=50 alt="qwak" title="qwak"> qwak</h1>
+<img src="https://raw.github.com/c0ding/qwak/master/doc/qwak.png" alt="qwak" title="qwak">
 
 [![PyPi Version](http://img.shields.io/pypi/v/qwak.svg)](https://pypi.python.org/pypi/qwak/)   [![Downloads](http://img.shields.io/pypi/dm/qwak.svg)](https://pypi.python.org/pypi/qwak/)
 
