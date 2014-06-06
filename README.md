@@ -163,19 +163,6 @@ config = {
 }
 ```
 
-  - Pool workers:
-
-```
->>> qwak.current_workers()
-{
-    "getcurrentworkers": {
-        "version": "1.0.0", 
-        "data": 32, 
-        "runtime": 1.2381076812744
-    }
-}
-```
-
   - Pool top contributors:
 
 ```
