@@ -13,7 +13,7 @@
            Total Comments: 24
 
         Longest Code Line: 46
-       Shortest Code Line: 19 [__version__ = '0.2']
+       Shortest Code Line: 19 [__version__ = '0.3']
 
      Longest Comment Line: 23
     Shortest Comment Line: 23 [# -*- coding: utf-8 ...]
@@ -71,12 +71,12 @@
 
   Analyzing: https://github.com/c0ding/qwak/blob/master/qwak/__init__.py
 
-              Total Lines: 24
+              Total Lines: 22
 
-               Code Lines: 13 (54.1666%)
-              Blank Lines: 4 (16.6666%)
+               Code Lines: 12 (54.5454%)
+              Blank Lines: 3 (13.6363%)
 
-            Comment Lines: 7 (29.1666%)
+            Comment Lines: 7 (31.8181%)
          Doc String Lines: 0 (0.0%)
           Inline Comments: 1
               Doc Strings: 0
@@ -88,7 +88,7 @@
      Longest Comment Line: 23
     Shortest Comment Line: 9 [#     |_|]
 
-                  Imports: 2
+                  Imports: 1
                 Functions: 0
                   Classes: 0
             If Statements: 0

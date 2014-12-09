@@ -245,6 +245,19 @@ config = {
 
 ### Blocks:
 
+  - Estimated time to next block:
+
+```
+>>> qwak.estimated_time()
+{  
+    "getestimatedtime": {  
+        "version": "1.0.0",
+        "data": 63541.382146264,
+        "runtime": 2724.8191833496
+    }
+}
+```
+
   - Time since last block:
 
 ```

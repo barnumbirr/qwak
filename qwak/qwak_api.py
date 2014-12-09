@@ -5,7 +5,7 @@ import json
 from qwak_utils import make_request
 
 __title__   = 'qwak'
-__version__ = '0.2'
+__version__ = '0.3'
 __author__  = '@c0ding'
 __repo__    = 'https://github.com/c0ding/qwak'
 __license__ = 'Apache v2.0 License'

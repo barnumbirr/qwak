@@ -11,7 +11,7 @@ sys.path.append(os.path.dirname(os.path.expanduser(config_file)))
 from qwak_config import config
 
 __title__   = 'qwak'
-__version__ = '0.2'
+__version__ = '0.3'
 __author__  = '@c0ding'
 __repo__    = 'https://github.com/c0ding/qwak'
 __license__ = 'Apache v2.0 License'
