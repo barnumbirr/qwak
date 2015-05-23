@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Qwak by c0ding</title>
+    <title>Qwak by mrsmn</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,13 +18,13 @@
         <h1>Qwak</h1>
         <p>Python API wrapper for MPOS.</p>
 
-        <p class="view"><a href="https://github.com/c0ding/qwak">View the Project on GitHub <small>c0ding/qwak</small></a></p>
+        <p class="view"><a href="https://github.com/mrsmn/qwak">View the Project on GitHub <small>mrsmn/qwak</small></a></p>
 
 
         <ul>
-          <li><a href="https://github.com/c0ding/qwak/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/c0ding/qwak/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/c0ding/qwak">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/mrsmn/qwak/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mrsmn/qwak/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mrsmn/qwak">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
@@ -35,7 +35,7 @@
 <p><strong>qwak</strong> is an APACHE licensed library written in Python designed to provide a simple to use API wrapper for <a href="https://github.com/MPOS/php-mpos">MPOS</a>.</p>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation:</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation:</h2>
 
 <p>From source use</p>
 
@@ -48,7 +48,7 @@
 </code></pre>
 
 <h2>
-<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration:</h2>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration:</h2>
 
 <p>Create a <code>~/.qwak_config.py</code> file and fill in your pool URL and API key like so:</p>
 
@@ -62,16 +62,18 @@ config = {
 </code></pre>
 
 <h2>
-<a name="api-documentation" class="anchor" href="#api-documentation"><span class="octicon octicon-link"></span></a>API Documentation:</h2>
+<a id="api-documentation" class="anchor" href="#api-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Documentation:</h2>
 
 <p><strong>qwak</strong> handles all the API calls MPOS provides. Examples kindly provided by <a href="https://scrypt.io">script.io</a>.</p>
 
 <h3>
-<a name="pool" class="anchor" href="#pool"><span class="octicon octicon-link"></span></a>Pool:</h3>
+<a id="pool" class="anchor" href="#pool" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pool:</h3>
 
 <ul>
 <li>Public:</li>
-</ul><pre><code>&gt;&gt;&gt; import qwak
+</ul>
+
+<pre><code>&gt;&gt;&gt; import qwak
 &gt;&gt;&gt; qwak.public()
 {
     "pool_name": "Scrypt.io | HBN Pool", 
@@ -85,7 +87,9 @@ config = {
 
 <ul>
 <li>Pool info:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.pool_info()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.pool_info()
 {
     "getpoolinfo": {
         "version": "1.0.0", 
@@ -109,7 +113,9 @@ config = {
 
 <ul>
 <li>Pool status:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.pool_status()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.pool_status()
 {
     "getpoolstatus": {
         "version": "1.0.0", 
@@ -134,7 +140,9 @@ config = {
 
 <ul>
 <li>Pool hashrate:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.pool_hashrate()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.pool_hashrate()
 {
     "getpoolhashrate": {
         "version": "1.0.0", 
@@ -146,7 +154,9 @@ config = {
 
 <ul>
 <li>Pool sharerate:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.pool_sharerate()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.pool_sharerate()
 {
     "gethourlyhashrates": {
         "version": "1.0.0", 
@@ -186,7 +196,9 @@ config = {
 
 <ul>
 <li>Pool workers:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.current_workers()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.current_workers()
 {
     "getcurrentworkers": {
         "version": "1.0.0", 
@@ -198,7 +210,9 @@ config = {
 
 <ul>
 <li>Pool top contributors:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.top_contributors()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.top_contributors()
 {
     "gettopcontributors": {
         "version": "1.0.0", 
@@ -276,11 +290,27 @@ config = {
 </code></pre>
 
 <h3>
-<a name="blocks" class="anchor" href="#blocks"><span class="octicon octicon-link"></span></a>Blocks:</h3>
+<a id="blocks" class="anchor" href="#blocks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Blocks:</h3>
+
+<ul>
+<li>Estimated time to next block:</li>
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.estimated_time()
+{  
+    "getestimatedtime": {  
+        "version": "1.0.0",
+        "data": 63541.382146264,
+        "runtime": 2724.8191833496
+    }
+}
+</code></pre>
 
 <ul>
 <li>Time since last block:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.block_last()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.block_last()
 {
     "gettimesincelastblock": {
         "version": "1.0.0", 
@@ -292,7 +322,9 @@ config = {
 
 <ul>
 <li>Block count:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.block_count()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.block_count()
 {
     "getblockcount": {
         "version": "1.0.0", 
@@ -304,7 +336,9 @@ config = {
 
 <ul>
 <li>Blocks found on pool:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.blocks_found()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.blocks_found()
 {
     "getblocksfound": {
         "version": "1.0.0", 
@@ -352,7 +386,9 @@ config = {
 
 <ul>
 <li>Block stats:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.block_stats()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.block_stats()
 {
     "getblockstats": {
         "version": "1.0.0", 
@@ -407,11 +443,13 @@ config = {
 </code></pre>
 
 <h3>
-<a name="network" class="anchor" href="#network"><span class="octicon octicon-link"></span></a>Network:</h3>
+<a id="network" class="anchor" href="#network" aria-hidden="true"><span class="octicon octicon-link"></span></a>Network:</h3>
 
 <ul>
 <li>Difficulty:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.difficulty()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.difficulty()
 {
     "getdifficulty": {
         "version": "1.0.0", 
@@ -422,11 +460,13 @@ config = {
 </code></pre>
 
 <h3>
-<a name="user" class="anchor" href="#user"><span class="octicon octicon-link"></span></a>User:</h3>
+<a id="user" class="anchor" href="#user" aria-hidden="true"><span class="octicon octicon-link"></span></a>User:</h3>
 
 <ul>
 <li>User status:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.user_status()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.user_status()
 {
     "getuserstatus": {
         "version": "1.0.0", 
@@ -450,7 +490,9 @@ config = {
 
 <ul>
 <li>User balance:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.user_balance()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.user_balance()
 {
     "getuserbalance": {
         "version": "1.0.0", 
@@ -466,7 +508,9 @@ config = {
 
 <ul>
 <li>User hashrate:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.user_hashrate()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.user_hashrate()
 {
     "getuserhashrate": {
         "version": "1.0.0", 
@@ -478,7 +522,9 @@ config = {
 
 <ul>
 <li>User sharerate:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.user_sharerate()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.user_sharerate()
 {
     "getusersharerate": {
         "version": "1.0.0", 
@@ -490,7 +536,9 @@ config = {
 
 <ul>
 <li>User transactions:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.user_transactions()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.user_transactions()
 {
     "getusertransactions": {
         "version": "1.0.0", 
@@ -573,7 +621,9 @@ config = {
 
 <ul>
 <li>User sharerate:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.user_sharerate()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.user_sharerate()
 {
     "getusersharerate": {
         "version": "1.0.0", 
@@ -585,7 +635,9 @@ config = {
 
 <ul>
 <li>User transactions:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.user_transactions()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.user_transactions()
 {
     "getusertransactions": {
         "version": "1.0.0", 
@@ -668,7 +720,9 @@ config = {
 
 <ul>
 <li>User workers:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.user_workers()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.user_workers()
 {
     "getuserworkers": {
         "version": "1.0.0", 
@@ -741,7 +795,9 @@ config = {
 
 <ul>
 <li>Dashboard:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.user_dashboard()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.user_dashboard()
 {
     "getdashboarddata": {
         "version": "1.0.0", 
@@ -818,7 +874,9 @@ config = {
 
 <ul>
 <li>User navbar:</li>
-</ul><pre><code>&gt;&gt;&gt; qwak.user_navbar()
+</ul>
+
+<pre><code>&gt;&gt;&gt; qwak.user_navbar()
 {
     "getnavbardata": {
         "version": "1.0.0", 
@@ -848,7 +906,7 @@ config = {
 </code></pre>
 
 <h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License:</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License:</h2>
 
 <pre><code>  Apache v2.0 License
   Copyright 2014 Martin Simon
@@ -868,7 +926,7 @@ config = {
 </code></pre>
 
 <h2>
-<a name="buy-me-a-coffee" class="anchor" href="#buy-me-a-coffee"><span class="octicon octicon-link"></span></a>Buy me a coffee?</h2>
+<a id="buy-me-a-coffee" class="anchor" href="#buy-me-a-coffee" aria-hidden="true"><span class="octicon octicon-link"></span></a>Buy me a coffee?</h2>
 
 <p>If you feel like buying me a coffee (or a beer?), donations are welcome:</p>
 
@@ -878,7 +936,7 @@ DOGE: DRBkryyau5CMxpBzVmrBAjK6dVdMZSBsuS
 </code></pre>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/c0ding">c0ding</a></p>
+        <p>This project is maintained by <a href="https://github.com/mrsmn">mrsmn</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
